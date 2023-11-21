@@ -523,12 +523,26 @@ cpp_ml/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_ml.dir/build.make CMakeFiles/cpp_ml.dir/build
 .PHONY : cpp_ml/fast
 
+#=============================================================================
+# Target rules for targets named cpp_ml2
+
+# Build rule for target.
+cpp_ml2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp_ml2
+.PHONY : cpp_ml2
+
+# fast build rule for target.
+cpp_ml2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_ml2.dir/build.make CMakeFiles/cpp_ml2.dir/build
+.PHONY : cpp_ml2/fast
+
 cpp_ml.o: cpp_ml.cpp.o
 .PHONY : cpp_ml.o
 
 # target to build an object file
 cpp_ml.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_ml.dir/build.make CMakeFiles/cpp_ml.dir/cpp_ml.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_ml2.dir/build.make CMakeFiles/cpp_ml2.dir/cpp_ml.cpp.o
 .PHONY : cpp_ml.cpp.o
 
 cpp_ml.i: cpp_ml.cpp.i
@@ -537,6 +551,7 @@ cpp_ml.i: cpp_ml.cpp.i
 # target to preprocess a source file
 cpp_ml.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_ml.dir/build.make CMakeFiles/cpp_ml.dir/cpp_ml.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_ml2.dir/build.make CMakeFiles/cpp_ml2.dir/cpp_ml.cpp.i
 .PHONY : cpp_ml.cpp.i
 
 cpp_ml.s: cpp_ml.cpp.s
@@ -545,6 +560,7 @@ cpp_ml.s: cpp_ml.cpp.s
 # target to generate assembly for a file
 cpp_ml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_ml.dir/build.make CMakeFiles/cpp_ml.dir/cpp_ml.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_ml2.dir/build.make CMakeFiles/cpp_ml2.dir/cpp_ml.cpp.s
 .PHONY : cpp_ml.cpp.s
 
 # Help Target
@@ -587,6 +603,7 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... cpp_ml"
+	@echo "... cpp_ml2"
 	@echo "... cpp_ml.o"
 	@echo "... cpp_ml.i"
 	@echo "... cpp_ml.s"
