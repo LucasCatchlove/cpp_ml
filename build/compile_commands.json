@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/lucas/Documents/code/cpp_ml/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -o CMakeFiles/cpp_ml.dir/cpp_ml.cpp.o -c /Users/lucas/Documents/code/cpp_ml/cpp_ml.cpp",
+  "file": "/Users/lucas/Documents/code/cpp_ml/cpp_ml.cpp",
+  "output": "CMakeFiles/cpp_ml.dir/cpp_ml.cpp.o"
+}
+]

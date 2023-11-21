@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Darwin-clang++"
+	BuildStamp="20231121-0417-Experimental"
+	Name="Lucass-MBP.hitronhub.home"
+	Generator="ctest-3.27.8"
+	CompilerName="/usr/bin/clang++"
+	CompilerVersion="12.0.5.12050022"
+	OSName="macOS"
+	Hostname="Lucass-MBP.hitronhub.home"
+	OSRelease="11.7.7"
+	OSVersion="20G1345"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="69"
+	ProcessorCacheSize="32768"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="8192"
+	LogicalProcessorsPerPhysical="8"
+	ProcessorClockFrequency="2400"
+	>
+	<Testing>
+		<StartDateTime>Nov 20 23:17 EST</StartDateTime>
+		<StartTestTime>1700540231</StartTestTime>
+		<TestList/>
+		<EndDateTime>Nov 20 23:17 EST</EndDateTime>
+		<EndTestTime>1700540231</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
