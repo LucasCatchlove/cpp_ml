@@ -1,2 +1,1 @@
-/usr/bin/ar qc libcpp_ml.a CMakeFiles/cpp_ml.dir/cpp_ml.cpp.o
-/usr/bin/ranlib libcpp_ml.a
+/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cpp_ml.dir/cpp_ml.cpp.o -o cpp_ml 
