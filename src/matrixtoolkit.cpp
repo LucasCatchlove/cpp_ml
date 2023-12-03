@@ -1,9 +1,8 @@
 #include <iostream>
 #include <vector>
-#include <chrono>
 #include "matrixtoolkit.h"
 
-matrixtoolkit::Matrix add(const matrixtoolkit::Matrix &a, const matrixtoolkit::Matrix &b)
+matrixtoolkit::Matrix matrixtoolkit::add(const matrixtoolkit::Matrix &a, const matrixtoolkit::Matrix &b)
 {
     if (a.size() != b.size() && a[0].size() != b[0].size())
     {
@@ -25,7 +24,7 @@ matrixtoolkit::Matrix add(const matrixtoolkit::Matrix &a, const matrixtoolkit::M
     return result;
 }
 
-matrixtoolkit::Matrix subt(const matrixtoolkit::Matrix &a, const matrixtoolkit::Matrix &b)
+matrixtoolkit::Matrix matrixtoolkit::subt(const matrixtoolkit::Matrix &a, const matrixtoolkit::Matrix &b)
 {
     if (a.size() != b.size() && a[0].size() != b[0].size())
     {
@@ -47,7 +46,7 @@ matrixtoolkit::Matrix subt(const matrixtoolkit::Matrix &a, const matrixtoolkit::
     return result;
 }
 #pragma clang optimize off
-matrixtoolkit::Matrix mult_novec(const matrixtoolkit::Matrix &a, const matrixtoolkit::Matrix &b)
+matrixtoolkit::Matrix matrixtoolkit::mult_novec(const matrixtoolkit::Matrix &a, const matrixtoolkit::Matrix &b)
 {
 
     if (a[0].size() != b.size())
@@ -78,7 +77,7 @@ matrixtoolkit::Matrix mult_novec(const matrixtoolkit::Matrix &a, const matrixtoo
 }
 #pragma clang optimize on
 
-matrixtoolkit::Matrix mult(const matrixtoolkit::Matrix &a, const matrixtoolkit::Matrix &b)
+matrixtoolkit::Matrix matrixtoolkit::mult(const matrixtoolkit::Matrix &a, const matrixtoolkit::Matrix &b)
 {
 
     if (a[0].size() != b.size())
@@ -108,7 +107,7 @@ matrixtoolkit::Matrix mult(const matrixtoolkit::Matrix &a, const matrixtoolkit::
     return result;
 }
 
-matrixtoolkit::Matrix trans(const matrixtoolkit::Matrix &m)
+matrixtoolkit::Matrix matrixtoolkit::trans(const matrixtoolkit::Matrix &m)
 {
     int rows = m.size();
     int cols = m[0].size();
@@ -126,7 +125,7 @@ matrixtoolkit::Matrix trans(const matrixtoolkit::Matrix &m)
     return result;
 }
 
-void printmat(const matrixtoolkit::Matrix &m)
+void matrixtoolkit::printmat(const matrixtoolkit::Matrix &m)
 {
     int rows = m.size();
     int cols = m[0].size();
