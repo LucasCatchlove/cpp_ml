@@ -547,6 +547,30 @@ src/driver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/driver.dir/build.make CMakeFiles/driver.dir/src/driver.cpp.s
 .PHONY : src/driver.cpp.s
 
+src/linearregression.o: src/linearregression.cpp.o
+.PHONY : src/linearregression.o
+
+# target to build an object file
+src/linearregression.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/driver.dir/build.make CMakeFiles/driver.dir/src/linearregression.cpp.o
+.PHONY : src/linearregression.cpp.o
+
+src/linearregression.i: src/linearregression.cpp.i
+.PHONY : src/linearregression.i
+
+# target to preprocess a source file
+src/linearregression.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/driver.dir/build.make CMakeFiles/driver.dir/src/linearregression.cpp.i
+.PHONY : src/linearregression.cpp.i
+
+src/linearregression.s: src/linearregression.cpp.s
+.PHONY : src/linearregression.s
+
+# target to generate assembly for a file
+src/linearregression.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/driver.dir/build.make CMakeFiles/driver.dir/src/linearregression.cpp.s
+.PHONY : src/linearregression.cpp.s
+
 src/matrixtoolkit.o: src/matrixtoolkit.cpp.o
 .PHONY : src/matrixtoolkit.o
 
@@ -638,6 +662,9 @@ help:
 	@echo "... src/driver.o"
 	@echo "... src/driver.i"
 	@echo "... src/driver.s"
+	@echo "... src/linearregression.o"
+	@echo "... src/linearregression.i"
+	@echo "... src/linearregression.s"
 	@echo "... src/matrixtoolkit.o"
 	@echo "... src/matrixtoolkit.i"
 	@echo "... src/matrixtoolkit.s"

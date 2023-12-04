@@ -9,6 +9,7 @@ namespace matrixtoolkit
     Matrix add(const Matrix &a, const Matrix &b);
     Matrix add_mt(const Matrix &a, const Matrix &b);
     Matrix subt(const Matrix &a, const Matrix &b);
+    Matrix subt_mt(const Matrix &a, const Matrix &b);
     Matrix mult(const Matrix &a, const Matrix &b);
     Matrix mult_novec(const Matrix &a, const Matrix &b);
     Matrix trans(const Matrix &m);

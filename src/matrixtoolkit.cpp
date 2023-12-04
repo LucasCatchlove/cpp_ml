@@ -103,6 +103,61 @@ matrixtoolkit::Matrix matrixtoolkit::subt(const matrixtoolkit::Matrix &a, const 
 
     return result;
 }
+matrixtoolkit::Matrix matrixtoolkit::subt_mt(const matrixtoolkit::Matrix &a, const matrixtoolkit::Matrix &b)
+{
+    if (a.size() != b.size() && a[0].size() != b[0].size())
+    {
+        throw std::runtime_error("add(a,b): Dimensions of a and b must be the same");
+    }
+
+    int cols = a.size();
+    int rows = a[0].size();
+
+    matrixtoolkit::Matrix result(rows, std::vector<double>(cols, 0.0));
+
+    const int num_cores = std::thread::hardware_concurrency();
+
+    if (num_cores == 1)
+    {
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                result[i][j] = a[i][j] - b[i][j];
+            }
+        }
+    }
+    else
+    {
+        std::vector<std::thread> threads;
+
+        int chunk_size = rows / num_cores;
+
+        for (int i = 0; i < num_cores; i++)
+        {
+            const int start = i * chunk_size;
+            const int stop = (i + 1) * chunk_size < rows ? (i + 1) * chunk_size : rows;
+
+            std::thread th = std::thread([&a, &b, &result, cols, start, stop]() -> void
+                                         {
+                for (int i = start; i < stop; i++)
+                {
+                    for (int j = 0; j < cols; j++)
+                    {
+                        result[i][j] = a[i][j] + b[i][j];
+                    }
+            
+        } });
+            threads.push_back(std::move(th));
+        }
+        for (auto &t : threads)
+        {
+            t.join();
+        }
+    }
+
+    return result;
+}
 #pragma clang optimize off
 matrixtoolkit::Matrix matrixtoolkit::mult_novec(const matrixtoolkit::Matrix &a, const matrixtoolkit::Matrix &b)
 {

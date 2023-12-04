@@ -83,10 +83,24 @@ CMakeFiles/driver.dir/src/driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/driver.dir/src/driver.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lucas/Documents/code/cpp_ml/src/driver.cpp -o CMakeFiles/driver.dir/src/driver.cpp.s
 
+CMakeFiles/driver.dir/src/linearregression.cpp.o: CMakeFiles/driver.dir/flags.make
+CMakeFiles/driver.dir/src/linearregression.cpp.o: /Users/lucas/Documents/code/cpp_ml/src/linearregression.cpp
+CMakeFiles/driver.dir/src/linearregression.cpp.o: CMakeFiles/driver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lucas/Documents/code/cpp_ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/driver.dir/src/linearregression.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/driver.dir/src/linearregression.cpp.o -MF CMakeFiles/driver.dir/src/linearregression.cpp.o.d -o CMakeFiles/driver.dir/src/linearregression.cpp.o -c /Users/lucas/Documents/code/cpp_ml/src/linearregression.cpp
+
+CMakeFiles/driver.dir/src/linearregression.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/driver.dir/src/linearregression.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lucas/Documents/code/cpp_ml/src/linearregression.cpp > CMakeFiles/driver.dir/src/linearregression.cpp.i
+
+CMakeFiles/driver.dir/src/linearregression.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/driver.dir/src/linearregression.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lucas/Documents/code/cpp_ml/src/linearregression.cpp -o CMakeFiles/driver.dir/src/linearregression.cpp.s
+
 CMakeFiles/driver.dir/src/matrixtoolkit.cpp.o: CMakeFiles/driver.dir/flags.make
 CMakeFiles/driver.dir/src/matrixtoolkit.cpp.o: /Users/lucas/Documents/code/cpp_ml/src/matrixtoolkit.cpp
 CMakeFiles/driver.dir/src/matrixtoolkit.cpp.o: CMakeFiles/driver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lucas/Documents/code/cpp_ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/driver.dir/src/matrixtoolkit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lucas/Documents/code/cpp_ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/driver.dir/src/matrixtoolkit.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/driver.dir/src/matrixtoolkit.cpp.o -MF CMakeFiles/driver.dir/src/matrixtoolkit.cpp.o.d -o CMakeFiles/driver.dir/src/matrixtoolkit.cpp.o -c /Users/lucas/Documents/code/cpp_ml/src/matrixtoolkit.cpp
 
 CMakeFiles/driver.dir/src/matrixtoolkit.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/driver.dir/src/matrixtoolkit.cpp.s: cmake_force
 CMakeFiles/driver.dir/src/performancetoolkit.cpp.o: CMakeFiles/driver.dir/flags.make
 CMakeFiles/driver.dir/src/performancetoolkit.cpp.o: /Users/lucas/Documents/code/cpp_ml/src/performancetoolkit.cpp
 CMakeFiles/driver.dir/src/performancetoolkit.cpp.o: CMakeFiles/driver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lucas/Documents/code/cpp_ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/driver.dir/src/performancetoolkit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lucas/Documents/code/cpp_ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/driver.dir/src/performancetoolkit.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/driver.dir/src/performancetoolkit.cpp.o -MF CMakeFiles/driver.dir/src/performancetoolkit.cpp.o.d -o CMakeFiles/driver.dir/src/performancetoolkit.cpp.o -c /Users/lucas/Documents/code/cpp_ml/src/performancetoolkit.cpp
 
 CMakeFiles/driver.dir/src/performancetoolkit.cpp.i: cmake_force
@@ -114,6 +128,7 @@ CMakeFiles/driver.dir/src/performancetoolkit.cpp.s: cmake_force
 # Object files for target driver
 driver_OBJECTS = \
 "CMakeFiles/driver.dir/src/driver.cpp.o" \
+"CMakeFiles/driver.dir/src/linearregression.cpp.o" \
 "CMakeFiles/driver.dir/src/matrixtoolkit.cpp.o" \
 "CMakeFiles/driver.dir/src/performancetoolkit.cpp.o"
 
@@ -121,11 +136,12 @@ driver_OBJECTS = \
 driver_EXTERNAL_OBJECTS =
 
 driver: CMakeFiles/driver.dir/src/driver.cpp.o
+driver: CMakeFiles/driver.dir/src/linearregression.cpp.o
 driver: CMakeFiles/driver.dir/src/matrixtoolkit.cpp.o
 driver: CMakeFiles/driver.dir/src/performancetoolkit.cpp.o
 driver: CMakeFiles/driver.dir/build.make
 driver: CMakeFiles/driver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lucas/Documents/code/cpp_ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable driver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lucas/Documents/code/cpp_ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable driver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/driver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

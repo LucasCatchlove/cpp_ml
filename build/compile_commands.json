@@ -7,6 +7,12 @@
 },
 {
   "directory": "/Users/lucas/Documents/code/cpp_ml/build",
+  "command": "/usr/bin/clang++  -I/Users/lucas/Documents/code/cpp_ml/include -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -O3 -Rpass=loop-vectorize -Rpass-analysis=loop-vectorize -ffast-math -o CMakeFiles/driver.dir/src/linearregression.cpp.o -c /Users/lucas/Documents/code/cpp_ml/src/linearregression.cpp",
+  "file": "/Users/lucas/Documents/code/cpp_ml/src/linearregression.cpp",
+  "output": "CMakeFiles/driver.dir/src/linearregression.cpp.o"
+},
+{
+  "directory": "/Users/lucas/Documents/code/cpp_ml/build",
   "command": "/usr/bin/clang++  -I/Users/lucas/Documents/code/cpp_ml/include -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -O3 -Rpass=loop-vectorize -Rpass-analysis=loop-vectorize -ffast-math -o CMakeFiles/driver.dir/src/matrixtoolkit.cpp.o -c /Users/lucas/Documents/code/cpp_ml/src/matrixtoolkit.cpp",
   "file": "/Users/lucas/Documents/code/cpp_ml/src/matrixtoolkit.cpp",
   "output": "CMakeFiles/driver.dir/src/matrixtoolkit.cpp.o"
