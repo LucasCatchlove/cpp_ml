@@ -7,6 +7,7 @@ namespace matrixtoolkit
     typedef std::vector<std::vector<double>> Matrix;
 
     Matrix add(const Matrix &a, const Matrix &b);
+    Matrix add_mt(const Matrix &a, const Matrix &b);
     Matrix subt(const Matrix &a, const Matrix &b);
     Matrix mult(const Matrix &a, const Matrix &b);
     Matrix mult_novec(const Matrix &a, const Matrix &b);
